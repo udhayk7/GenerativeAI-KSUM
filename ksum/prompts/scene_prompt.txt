@@ -1,0 +1,28 @@
+Break down the following short story into {num_scenes} distinct visual scenes for a narrated slideshow:
+
+STORY:
+{story_text}
+
+For each scene:
+1. Create a detailed visual description for image generation
+2. Extract the narration text that should accompany this visual
+3. Suggest a brief emotional tone for this scene (e.g., "mysterious", "joyful", "tense")
+
+Format your response as a JSON array with this structure:
+[
+    {
+        "description": "Detailed visual description for image generation (no text in image)",
+        "narration": "Text that should be read during this scene",
+        "tone": "emotional tone of the scene",
+        "image_prompt": "Optimized prompt for DALL-E image generation with style guidance"
+    },
+    // additional scenes...
+]
+
+IMPORTANT GUIDELINES:
+- Make each scene visually distinct
+- Description should focus on what should be SEEN in the image
+- Narration should be the exact text from the story that corresponds to this scene
+- The image_prompt should be detailed and include artistic style guidance
+- Don't include text overlay instructions in image descriptions
+- Keep the original story's emotional tone 
