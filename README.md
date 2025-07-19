@@ -102,4 +102,4 @@ The system includes sophisticated fallback mechanisms to work even without API a
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE). 
+This project is open source and available under the [MIT License](LICENSE).
